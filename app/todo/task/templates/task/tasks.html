@@ -1,0 +1,31 @@
+{% extends 'main.html' %}
+
+{% block content %}
+    <div id = "app">
+
+    <form>
+        <div class = "form-group row">
+            <div class="col-9">
+                <label>Create New Task</label>
+                <input class="form-control">
+            </div>
+
+            <div class="d-flex flex-column">
+                <button class="btn-success mt-auto">Create</button>
+            </div>
+        </div>
+    </form>  
+    <div class = "mt-5">
+            <div class="card">
+                <div class="card-body">
+                
+                <button type="button" class="close float-right">
+                    <span>&times;</span>
+                </button>
+                </div>
+            </div>
+    </div>
+
+    </div>
+
+{% endblock %}
