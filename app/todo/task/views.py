@@ -41,4 +41,4 @@ class TaskDelete(View):
     def post(self, request, id):
         task = Task.objects.get(id=id)
         task.delete()
-        return JsonResponse({'result': 'ok'}, status=200)
+        return JsonResponse({'result': '200'}, status=200)
