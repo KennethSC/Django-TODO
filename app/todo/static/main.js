@@ -13,9 +13,6 @@ function sendRequest(url, method, data){
     return request
 }
 
-
-
-
 var app = new Vue({
     el: "#app",
     data: {
