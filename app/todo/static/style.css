@@ -1,3 +1,8 @@
 .completed{
     text-decoration: line-through;
 }
+
+body {
+    background-image: url("./images/workspace-background.jpeg");
+    background-repeat: no-repeat;
+}
