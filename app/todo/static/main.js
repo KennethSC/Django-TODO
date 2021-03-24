@@ -54,6 +54,7 @@ var app = new Vue({
             sendRequest('', 'post', formData)
                 .then(function(response){
                     vm.tasks.push(response.data.task);
+                    vm.task = '';
                 })
         },
         completeTask(id, index){

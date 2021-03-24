@@ -32,7 +32,10 @@ class TaskView(View):
 class TaskComplete(View):
     def post(self, request, id):
         task = Task.objects.get(id=id)
-        task.completed = True
+        if task.completed == False:
+            task.completed = True
+        else:
+            task.completed = False
         task.save()
         return JsonResponse({'task': model_to_dict(task)}, status=200)
 
